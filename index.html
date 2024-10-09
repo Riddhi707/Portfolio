@@ -4,37 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riddhi Singh - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="dp.jpg" alt="Profile Picture" class="profile-pic">
-        <h1>Hi, I'm Riddhi Singh</h1>
-        <p>Hello, I am a IT Programmer Student seeking an opputunity to sharp my skills through a job. I willing to use my C#, Java, Sql,Html,Css And PHP skils </p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills/Experience</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Riddhi Singh</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">Skills/Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <main>
-        <section class="projects">
-            <h2>Featured Projects</h2>
-            <article>
-                <h3>Online Attendance System</h3>
-                <p>A system developed with Python for real-time attendance updates and reporting.</p>
-                <a href="projects.html">Learn More</a>
-            </article>
-            <article>
-                <h3>Personality Test Website</h3>
-                <p>A user-friendly personality test website created using HTML, CSS, and JavaScript.</p>
-                <a href="projects.html">Learn More</a>
-            </article>
+
+    <div class="container">
+        <section class="intro text-center my-5">
+            <img src="dp.jpg" alt="Profile Picture" class="img-fluid rounded-circle" width="150">
+            <h1>Hi, I'm Riddhi Singh</h1>
+            <p>Hello! I’m Riddhi, a tech enthusiast and aspiring developer currently mastering the art of 
+                web development as an IT Programmer Analyst at LaSalle College in Montreal.
+                 With a Bachelor’s degree in Computer Applications from DAMS,
+                  I’ve crafted diverse projects, including a vibrant jewelry-selling website and
+                   a dynamic iOS To-Do app that keeps users organized with style. Currently,
+                    I’m diving deep into full-stack development at BDH Collective, where creativity meets 
+                    code. I thrive on solving challenges and am passionate about leveraging technology to
+                     create impactful solutions. Let’s build something amazing together!</p>
+            
+            <!-- Add Resume Download Button -->
+            <a href="Riddhi-Singh.pdf" class="btn btn-primary" download>Download Resume</a>
         </section>
-    </main>
-    <footer>
-        <p>© 2024 Riddhi Singh. All rights reserved.</p>
+
+        <section class="projects-highlight">
+            <h2>Highlighted Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>To-Do Application</h3>
+                    <p>Swift-based iOS app with Firebase integration.</p>
+                    <a href="projects.html#todo">Learn More</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Mood Food</h3>
+                    <p>Windows Forms app suggesting recipes based on user mood.</p>
+                    <a href="projects.html#moodfood">Learn More</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Jewelry Selling Website</h3>
+                    <p>PHP-based e-commerce site for jewelry.</p>
+                    <a href="projects.html#jewelry">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Riddhi Singh | <a href="https://github.com/Riddhi707">GitHub</a> | <a href="https://linkedin.com/in/riddhi-singh0">LinkedIn</a></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

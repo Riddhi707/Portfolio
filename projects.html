@@ -4,44 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Riddhi Singh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills/Experience</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Riddhi Singh</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">Skills/Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <main>
-        <section class="projects">
-            <h1>My Projects</h1>
-            <article>
-                <h2>Online Attendance System</h2>
-                <p>Developed an online attendance system with real-time updates and reporting functionalities using Python.</p>
-                <a href="https://github.com/Riddhi707/online-attendance-system" target="_blank">GitHub Repository</a>
-            </article>
-            <article>
-                <h2>Personality Test Website</h2>
-                <p>Created a user-friendly personality test website using HTML, CSS, and JavaScript.</p>
-                <a href="https://github.com/Riddhi707/personality-test-website" target="_blank">GitHub Repository</a>
-            </article>
-            <article>
-                <h2>Hotel Management System</h2>
-                <p>Applied UML concepts to design and implement a Java-based hotel management application.</p>
-                <a href="https://github.com/Riddhi707/hotel-management" target="_blank">GitHub Repository</a>
-            </article>
-            <article>
-                <h2>Jewelry Selling Website</h2>
-                <p>Led the development of a jewelry-selling website using PHP and modern web technologies.</p>
-                <a href="https://github.com/Riddhi707/jewelry-selling-website" target="_blank">GitHub Repository</a>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Riddhi Singh. All rights reserved.</p>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Projects</h1>
+        <div class="row">
+            <!-- Existing Projects -->
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="to-do.jpg" alt="To-Do App" class="card-img-top project-img">
+                    <div class="card-body">
+                        <h5 class="card-title">To-Do Application</h5>
+                        <p class="card-text">Swift-based iOS app with Firebase integration for task management.</p>
+                        <a href="https://github.com/Riddhi707/todo-app.git" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="moodFood.jpg" alt="Mood Food App" class="card-img-top project-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Mood Food</h5>
+                        <p class="card-text">Windows Forms app using C# to suggest recipes based on user mood.</p>
+                        <a href="https://github.com/Riddhi707/mood-food.git" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="image.png" alt="Jewelry Selling Website" class="card-img-top project-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Jewelry Selling Website</h5>
+                        <p class="card-text">PHP-based e-commerce website for selling jewelry.</p>
+                        <a href="https://github.com/Riddhi707/jewelry-selling.git" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Projects -->
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="att.png" alt="Attendance System" class="card-img-top project-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Attendance System</h5>
+                        <p class="card-text">Python-based online attendance system with real-time updates and reporting functionalities.</p>
+                        <a href="https://github.com/Riddhi707/online-attendance-system" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="HotelManagement.jpg" alt="Hotel Management System" class="card-img-top project-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Management System</h5>
+                        <p class="card-text">Java-based hotel management system applying UML design concepts.</p>
+                        <a href="https://github.com/Riddhi707/hotel-management-system.git" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="OM.png" alt="Hi-Tech Order Management System" class="card-img-top project-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hi-Tech Order Management System</h5>
+                        <p class="card-text">C# and SQL Server-based Windows Forms application to manage book orders.</p>
+                        <a href="https://github.com/Riddhi707/hi-tech-order-management.git" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Ht.jpg" alt="Habit Tracker" class="card-img-top project-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Habit Tracker</h5>
+                        <p>Android application to help users track and develop habits, built using Android Studio.</p>
+                        <a href="https://github.com/Riddhi707/HabitTrackerPrj.git" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Riddhi Singh</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
